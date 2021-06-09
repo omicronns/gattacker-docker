@@ -1,11 +1,11 @@
 # Build
 
 ```
-docker build . -t gattacker:stable
+docker build . -t gattacker:latest
 ```
 
 # Running
 
 ```
-docker run --net=host --privileged -it --rm gattacker:stable
+docker run --net=host --privileged -it --rm gattacker:latest
 ```
