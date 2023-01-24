@@ -19,3 +19,17 @@ docker run --net=host --privileged --name gattacker -itd omicronns/gattacker:lat
 # New shell
 docker exec -it gattacker /bin/bash
 ```
+
+Once daemon is running you can execute gattacker ws-slave.
+
+```
+root@raspberrypi:/# cd gattacker
+root@raspberrypi:/# node ws-slave
+```
+
+On same or another device, you can run other scripts (editing config.env in the docker container is required if different device is used).
+
+```
+root@koadas-precision:/# cd gattacker
+root@koadas-precision:/gattacker# node scan
+```
